@@ -95,7 +95,9 @@ module Twitter
       def fail_or_return_response_body(code, body, headers)
         puts "fail_or_return_response_body"
         puts code
+        puts "Body is"
         puts body
+        puts "Headers Are -->"
         puts headers
         error = error(code, body, headers)
         raise(error) if error
