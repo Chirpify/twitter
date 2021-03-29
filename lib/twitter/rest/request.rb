@@ -99,6 +99,7 @@ module Twitter
         puts body
         puts "Headers Are -->"
         puts headers
+        puts headers.inspect
         error = error(code, body, headers)
         raise(error) if error
 
